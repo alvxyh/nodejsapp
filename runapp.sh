@@ -1,8 +1,8 @@
 #!/bin/bash
-imageName alija:nodejsapp
+imageName=nodejsapp
 containerName=nodecontainer
 
-docker build -t $imageName -f Dockerfile  .
+docker build -t $imageName .
 
 echo Delete old container...
 docker rm -f $containerName
